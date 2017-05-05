@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('animal/cat', 'AnimalController@getAnimal')->name('cat');
